@@ -5,8 +5,7 @@
  */
 package org.clingan.usergroups.java8.examples.streams;
 
-import java.util.Arrays;
-import java.util.Comparator;
+import static java.util.Arrays.asList;
 import java.util.List;
 
 interface MyInterface {
@@ -26,7 +25,7 @@ public class InternalIterationMyInterface {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        List<Integer> array = Arrays.asList(10, 4, 13, 1, 37);
+        List<Integer> array = asList(10, 4, 13, 1, 37);
 
 //        System.out.println("Min value is " + array.stream().min(
 //                new Comparator<Integer>() {

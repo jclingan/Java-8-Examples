@@ -5,7 +5,7 @@
  */
 package org.clingan.usergroups.java8.examples.streams;
 
-import java.util.Arrays;
+import static java.util.Arrays.asList;
 import java.util.List;
 import java.util.Optional;
 
@@ -19,7 +19,7 @@ public class InternalIterationReduce {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
+        List<Integer> list = asList(1, 2, 3, 4, 5);
 
         Optional<Integer> in = list.stream()
                 .filter(i -> i % 2 == 0)
